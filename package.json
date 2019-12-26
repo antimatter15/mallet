@@ -1,0 +1,21 @@
+{
+  "name": "mallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "math-betaln": "^0.0.0",
+    "math-digamma": "^1.0.2",
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.0",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.4"
+  }
+}
