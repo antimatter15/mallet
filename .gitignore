@@ -5,3 +5,5 @@ node_modules
 crowd_bt.py
 .cache
 dist
+public
+.firebase
