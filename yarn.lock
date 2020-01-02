@@ -1417,6 +1417,18 @@ component-emitter@^1.2.1:
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
   integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
 
+compute-polynomial@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/compute-polynomial/-/compute-polynomial-1.1.0.tgz#580782e6ca5dcf3c59baecc7fef3f7a23520275e"
+  integrity sha1-WAeC5spdzzxZuuzH/vP3ojUgJ14=
+  dependencies:
+    validate.io-array "^1.0.3"
+    validate.io-boolean-primitive "^1.0.0"
+    validate.io-function "^1.0.2"
+    validate.io-number-primitive "^1.0.0"
+    validate.io-number-primitive-array "^1.0.0"
+    validate.io-object "^1.0.3"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -1436,6 +1448,11 @@ console-browserify@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.2.0.tgz#67063cef57ceb6cf4993a2ab3a55840ae8c49336"
   integrity sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA==
+
+const-pi@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/const-pi/-/const-pi-1.0.3.tgz#53d25972fac86f69186b129d0de36a2d44840689"
+  integrity sha1-U9JZcvrIb2kYaxKdDeNqLUSEBok=
 
 constants-browserify@^1.0.0:
   version "1.0.0"
@@ -2253,6 +2270,11 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+gamma@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gamma/-/gamma-1.0.0.tgz#983c1c939fe23d932701585711e1d9a430cb74cb"
+  integrity sha1-mDwck5/iPZMnAVhXEeHZpDDLdMs=
+
 get-caller-file@^2.0.1:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
@@ -3031,6 +3053,62 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+math-abs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/math-abs/-/math-abs-1.0.2.tgz#8fb2675d969327a61a629821fc23e41faac5c4d3"
+  integrity sha1-j7JnXZaTJ6YaYpgh/CPkH6rFxNM=
+
+math-betaln@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/math-betaln/-/math-betaln-0.0.0.tgz#c8f1a4cdbd55da8e21e78fca58a28436280ed2a2"
+  integrity sha1-yPGkzb1V2o4h54/KWKKENigO0qI=
+  dependencies:
+    compute-polynomial "^1.1.0"
+    gamma "^1.0.0"
+    math-floor "^1.0.0"
+    math-ln "^1.0.0"
+    math-tan "^1.0.0"
+    validate.io-nan "^1.0.3"
+
+math-digamma@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/math-digamma/-/math-digamma-1.0.2.tgz#98cb9516343fcd5f91f316c03783acdbd68486aa"
+  integrity sha1-mMuVFjQ/zV+R8xbAN4Os29aEhqo=
+  dependencies:
+    const-pi "^1.0.3"
+    math-evalpoly "^1.1.0"
+    math-evalrational "^1.0.0"
+    math-floor "^1.0.0"
+    math-ln "^1.0.0"
+    math-tan "^1.0.0"
+
+math-evalpoly@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/math-evalpoly/-/math-evalpoly-1.1.0.tgz#c456a76ecc54d2695036d0e0c4304d087960d12a"
+  integrity sha1-xFanbsxU0mlQNtDgxDBNCHlg0So=
+
+math-evalrational@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/math-evalrational/-/math-evalrational-1.0.0.tgz#8560d44b3983f6077c25a8daf02328185cc03fd5"
+  integrity sha1-hWDUSzmD9gd8Jaja8CMoGFzAP9U=
+  dependencies:
+    math-abs "^1.0.2"
+
+math-floor@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/math-floor/-/math-floor-1.0.1.tgz#7f31099229810348a1709cc9fcdafbe5b4ef853a"
+  integrity sha1-fzEJkimBA0ihcJzJ/Nr75bTvhTo=
+
+math-ln@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/math-ln/-/math-ln-1.0.0.tgz#aa41b5ef57d358a8e56e2f1a465cdd88975916ab"
+  integrity sha1-qkG171fTWKjlbi8aRlzdiJdZFqs=
+
+math-tan@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/math-tan/-/math-tan-1.0.0.tgz#832442d062c7b08c8eafee95f3e0e3027182975b"
+  integrity sha1-gyRC0GLHsIyOr+6V8+DjAnGCl1s=
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -5073,6 +5151,45 @@ v8-compile-cache@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
   integrity sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
+
+validate.io-array@^1.0.1, validate.io-array@^1.0.3:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/validate.io-array/-/validate.io-array-1.0.6.tgz#5b5a2cafd8f8b85abb2f886ba153f2d93a27774d"
+  integrity sha1-W1osr9j4uFq7L4hroVPy2Tond00=
+
+validate.io-boolean-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-boolean-primitive/-/validate.io-boolean-primitive-1.0.0.tgz#bb14c9cb8683c3c9f3d1329a95a7768e3ee29eb5"
+  integrity sha1-uxTJy4aDw8nz0TKalad2jj7inrU=
+
+validate.io-function@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/validate.io-function/-/validate.io-function-1.0.2.tgz#343a19802ed3b1968269c780e558e93411c0bad7"
+  integrity sha1-NDoZgC7TsZaCaceA5VjpNBHAutc=
+
+validate.io-nan@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/validate.io-nan/-/validate.io-nan-1.0.3.tgz#d438e13868c9cbd37fdba12594de4d8fe14430a4"
+  integrity sha1-1DjhOGjJy9N/26EllN5Nj+FEMKQ=
+
+validate.io-number-primitive-array@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-number-primitive-array/-/validate.io-number-primitive-array-1.0.0.tgz#70644408c594d42f1fbbd65ac6b231631e869954"
+  integrity sha1-cGRECMWU1C8fu9ZaxrIxYx6GmVQ=
+  dependencies:
+    validate.io-array "^1.0.3"
+
+validate.io-number-primitive@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/validate.io-number-primitive/-/validate.io-number-primitive-1.0.0.tgz#d2e01f202989369dcf1155449564203afe584e55"
+  integrity sha1-0uAfICmJNp3PEVVElWQgOv5YTlU=
+
+validate.io-object@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/validate.io-object/-/validate.io-object-1.0.4.tgz#dca01eceee390e110dbc2af843c81f7bf33a41ab"
+  integrity sha1-3KAezu45DhENvCr4Q8gfe/M6Qas=
+  dependencies:
+    validate.io-array "^1.0.1"
 
 vendors@^1.0.0:
   version "1.0.3"
