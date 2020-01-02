@@ -3,3 +3,5 @@ node_modules
 *.log
 .DS_Store
 crowd_bt.py
+.cache
+dist

@@ -1,0 +1,23 @@
+{
+    "name": "mallet",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:antimatter15/mallet.git",
+    "author": "Kevin Kwok <antimatter15@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel index.html -p 1331",
+        "build": "parcel build index.html -d public"
+    },
+    "dependencies": {
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "parcel": "^1.12.4",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0"
+    },
+    "devDependencies": {
+        "less": "^3.10.3",
+        "typescript": "^3.7.4"
+    }
+}
