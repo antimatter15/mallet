@@ -7,11 +7,13 @@
     "dev": "next dev"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "lodash": "^4.17.15",
     "math-betaln": "^0.0.0",
     "math-digamma": "^1.0.2",
     "next": "^9.1.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^0.0.0-experimental-f42431abe",
+    "react-dom": "^0.0.0-experimental-f42431abe"
   },
   "devDependencies": {
     "@types/node": "^13.1.0",
