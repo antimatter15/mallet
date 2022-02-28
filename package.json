@@ -13,7 +13,7 @@
         "@types/lodash": "^4.14.149",
         "@types/react": "^16.9.17",
         "@types/react-dom": "^16.9.4",
-        "firebase": "^7.6.1",
+        "gh-pages": "^3.2.3",
         "lodash": "^4.17.15",
         "math-betaln": "^0.0.0",
         "math-digamma": "^1.0.2",
